@@ -30,3 +30,9 @@ Projeto para entrega, utilizando o Design Pattern Factory Method, para criação
 - Loop para reiniciar o programa até o usuário digitar "Q" para sair
 
     _"Digite Q para sair ou enter para cadastrar uma nova pessoa: "_ 
+
+<hr>
+**Comentários**
+Para a utilização em NodeJS, é preciso utilizar os comandos:
+    "npm init -y"
+    "npm i prompt-sync"
