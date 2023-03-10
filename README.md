@@ -29,4 +29,4 @@ Projeto para entrega, utilizando o Design Pattern Factory Method, para criação
 
 - Loop para reiniciar o programa até o usuário digitar "Q" para sair
 
-    _"Digite Q para sair ou enter para cadastrar uma nova pessoa: " 
+    _"Digite Q para sair ou enter para cadastrar uma nova pessoa: "_ 
