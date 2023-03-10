@@ -2,7 +2,9 @@
 <hr>
 Projeto para entrega, utilizando o Design Pattern Factory Method, para criação de classes, o mesmo implementado na linguagem Python, e em JavaScript utilizando NodeJS
 
+
 **Autor**
+
 * Felipe Soares Batista da Cruz
 
 **Instruções**
