@@ -34,5 +34,7 @@ Projeto para entrega, utilizando o Design Pattern Factory Method, para criação
 <hr>
 **Comentários**
 Para a utilização em NodeJS, é preciso utilizar os comandos:
-    "npm init -y"
-    "npm i prompt-sync"
+
+    _"npm init -y"_
+    
+    _"npm i prompt-sync"_
