@@ -1,0 +1,22 @@
+{
+  "name": "factorymethod",
+  "version": "1.0.0",
+  "description": "",
+  "main": "portaria.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipe-SBC/FactoryMethod.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipe-SBC/FactoryMethod/issues"
+  },
+  "homepage": "https://github.com/felipe-SBC/FactoryMethod#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

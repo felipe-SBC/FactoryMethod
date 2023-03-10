@@ -1,5 +1,5 @@
 //AINDA INCOMPLETO
-//const prompt = require('prompt-sync')();
+var prompt = require('prompt-sync')();
 
 var FabricaPortaria = function(){
     this.criarPessoa = function(nomePessoa, cargo){
@@ -50,7 +50,9 @@ var NaoPossui = function(){
 }
 
 var fabricar = new FabricaPortaria();
-
-var nomePessoa = prompt("Entre com seu nome: ");
-var cargo = prompt("Entre com seu cargo: ");
-fabricar.criarPessoa(nomePessoa, cargo);
+do{
+    var nomePessoa = prompt("Entre com seu nome: ");
+    var cargo = prompt("Entre com seu cargo: ");
+    fabricar.criarPessoa(nomePessoa, cargo);
+    var q = prompt("Digite Q para sair ou enter para cadastrar uma nova pessoa: ");
+} while(q!="Q");
