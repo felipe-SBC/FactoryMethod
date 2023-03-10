@@ -26,3 +26,7 @@ Projeto para entrega, utilizando o Design Pattern Factory Method, para criação
 - Caso não possua relação com a instituição
     
     _" O XXXXX não tem nenhuma relação com a instituição, acompanhar até a secretaria"_
+
+- Loop para reiniciar o programa até o usuário digitar "Q" para sair
+
+    _"Digite Q para sair ou enter para cadastrar uma nova pessoa: " 
