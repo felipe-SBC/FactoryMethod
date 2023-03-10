@@ -32,7 +32,9 @@ Projeto para entrega, utilizando o Design Pattern Factory Method, para criação
     _"Digite Q para sair ou enter para cadastrar uma nova pessoa: "_ 
 
 <hr>
+
 **Comentários**
+
 Para a utilização em NodeJS, é preciso utilizar os comandos:
 
     _"npm init -y"_
