@@ -1,58 +1,69 @@
 //AINDA INCOMPLETO
 var prompt = require('prompt-sync')();
 
-var FabricaPortaria = function(){
-    this.criarPessoa = function(nomePessoa, cargo){
-        var pessoa;
-        
-        if(cargo === "Aluno"){
-            pessoa = new Aluno();
-        }else if (cargo === "Professor"){
-            pessoa = new Professor();
-        }else if (cargo === "Coordenador"){
-            pessoa = new Coordenador();
-        }else if (cargo === "Diretor"){
-            pessoa = new Diretor();
-        }else if (cargo === "Administrativo"){
-            pessoa = new Administrativo();
-        }else if (cargo === "Vestibulando"){
-            pessoa = new Vestibulando();
-        }else{
-            pessoa = new NaoPossui();
-        }
-        pessoa.nome = nomePessoa;
-        pessoa.Fale = function(){
-            console.log("O "+nomePessoa+" "+this.diga);
-        }
-        return pessoa.Fale();
-    }
-}
-var Aluno = function(){
-    this.diga = "tem relação com a instituição como Aluno";
-}
-var Professor = function(){
-    this.diga = "tem relação com a instituição como Professor";
-}
-var Coordenador = function(){
-    this.diga = "tem relação com a instituição como Coordenador";
-}
-var Diretor = function(){
-    this.diga = "tem relação com a instituição como Diretor";
-}
-var Administrativo = function(){
-    this.diga = "tem relação com a instituição como Administrativo";
-}
-var Vestibulando = function(){
-    this.diga = "tem relação com a instituição como Vestibulando";
-}
-var NaoPossui = function(){
-    this.diga = "não tem nenhuma relação com a instituição, acompanhar até a secretaria";
+class Portaria{
+    entrar() {}
 }
 
+class Aluno extends Portaria{
+    entrar(pessoa){
+        return "O "+pessoa+" tem relação com a instituição como Aluno"
+    }
+}
+
+class Professor extends Portaria{
+    entrar(pessoa){
+        return "O "+pessoa+" tem relação com a instituição como Professor"
+    }
+}
+
+class Diretor extends Portaria{
+    entrar(pessoa){
+        return "O "+pessoa+" tem relação com a instituição como Diretor"
+    }
+}
+
+class Vestibulando extends Portaria{
+    entrar(pessoa){
+        return "O "+pessoa+" tem relação com a instituição como Vestibulando"
+    }
+}
+
+class Administrativo extends Portaria{
+    entrar(pessoa){
+        return "O "+pessoa+" tem relação com a instituição como Administrativo"
+    }
+}
+class NaoPossui extends Portaria{
+    entrar(pessoa){
+        return "O "+pessoa+" não possui relacionamento com a instituição, acompanhar até a secretaria"
+    }
+}
+
+var FabricaPortaria = function() {
+    this.criarPessoa = function(cargo){
+        var pessoa;
+        if(cargo === "Aluno"){
+            return pessoa = new Aluno();
+        }else if(cargo === "Professor"){
+            return pessoa = new Professor();
+        }else if(cargo === "Diretor"){
+            return pessoa = new Diretor()
+        }else if(cargo === "Professor"){
+            return pessoa = new Vestibulando();
+        }else if(cargo === "Administrativo"){
+            return pessoa = new Administrativo();
+        }else{
+            return pessoa = new NaoPossui();
+        }
+    }
+}
 var fabricar = new FabricaPortaria();
 do{
     var nomePessoa = prompt("Entre com seu nome: ");
-    var cargo = prompt("Entre com seu cargo: ");
-    fabricar.criarPessoa(nomePessoa, cargo);
-    var q = prompt("Digite Q para sair ou enter para cadastrar uma nova pessoa: ");
-} while(q!="Q");
+    var cargo = prompt("Entre com seu cargo: ")
+    pessoa = fabricar.criarPessoa(cargo);
+    console.log(pessoa.entrar(nomePessoa));
+    var q = prompt("\nDigite Q para sair ou enter para cadastrar uma nova pessoa: ");
+    console.log();
+} while(q!="Q")
