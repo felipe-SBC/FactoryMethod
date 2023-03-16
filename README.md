@@ -1,6 +1,6 @@
 <h1>Factory Method</h1>
 <hr>
-Projeto para entrega, utilizando o Design Pattern Factory Method, para criação de classes, o mesmo implementado na linguagem Python, e em JavaScript utilizando NodeJS
+Projeto de uma lanchonete, utilizando o Design Pattern Factory Method, para criação de classes, o mesmo implementado na linguagem Python, e em JavaScript utilizando NodeJS
 <hr>
 
 
